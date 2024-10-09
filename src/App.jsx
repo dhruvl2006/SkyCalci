@@ -174,12 +174,12 @@ function App() {
 
         {city === "" ? (
           <div className="search">
-            <img src="src\assets\seatch-weather.png" alt="" />
+            <img src="./seatch-weather.png" alt="" />
             <p>Search a city to get the current weather</p>
           </div>
         ) : error ? (
           <div className="notFound">
-            <img src="src\assets\404 (1).webp" alt="" />
+            <img src="./404 (1).webp" alt="" />
             <p>City Not Found...!!!</p>
           </div>
         ) : loading ? (
@@ -199,11 +199,7 @@ function App() {
                     </div>
                     <div className="left-down">
                       <div className="location">
-                        <img
-                          src="src\assets\location.png"
-                          width="35px"
-                          alt=""
-                        />
+                        <img src="./location.png" width="35px" alt="" />
                         <p>
                           {fetchedData.name}, {fetchedData.sys.country} |{" "}
                           {currentTime}
@@ -220,34 +216,34 @@ function App() {
                   </div>
                   <div className="second">
                     {weather == "sunny" ? (
-                      <img src="src\assets\sunny.gif" alt="" />
+                      <img src="./sunny.gif" alt="" />
                     ) : weather == "rainy" ? (
-                      <img src="src\assets\rainy.gif" alt="" />
+                      <img src="./rainy.gif" alt="" />
                     ) : weather == "cloudy" ? (
-                      <img src="src\assets\cloudy.gif" alt="" />
+                      <img src="./cloudy.gif" alt="" />
                     ) : weather == "night" ? (
-                      <img src="src\assets\night.gif" alt="" />
+                      <img src="./night.gif" alt="" />
                     ) : weather == "windy" ? (
-                      <img src="src\assets\windy.gif" alt="" />
+                      <img src="./windy.gif" alt="" />
                     ) : weather == "fog" ? (
-                      <img src="src\assets\foggy.gif" alt="" />
+                      <img src="./foggy.gif" alt="" />
                     ) : (
-                      <img src="src\assets\sunny.gif" alt="" />
+                      <img src="./sunny.gif" alt="" />
                     )}
                   </div>
                 </div>
                 <div className="right-side">
                   <div className="weather-temp-info">
                     <div className="weather-features">
-                      <img src="src\assets\humidity.png" width="40px" alt="" />
+                      <img src="./humidity.png" width="40px" alt="" />
                       <p>Humidity</p> <p>{fetchedData.main.humidity}%</p>
                     </div>
                     <div className="weather-features">
-                      <img src="src\assets\wind.png" width="40px" alt="" />
+                      <img src="./wind.png" width="40px" alt="" />
                       <p>Wind</p> <p>{fetchedData.wind.speed}m/s</p>
                     </div>
                     <div className="weather-features">
-                      <img src="src\assets\sunrise.png" width="40px" alt="" />
+                      <img src="./sunrise.png" width="40px" alt="" />
                       <p>Sunrise</p>{" "}
                       <p>
                         {convertTo12HourFormat(
@@ -257,7 +253,7 @@ function App() {
                       </p>
                     </div>
                     <div className="weather-features">
-                      <img src="src\assets\sunset.png" width="40px" alt="" />
+                      <img src="./sunset.png" width="40px" alt="" />
                       <p>Sunset</p>{" "}
                       <p>
                         {convertTo12HourFormat(
@@ -286,11 +282,7 @@ function App() {
                           <div className="days">
                             <p className="left">{currentDate}</p>
                             <p className="middle">
-                              <img
-                                src="src\assets\humidity.png"
-                                width="15"
-                                alt=""
-                              />{" "}
+                              <img src="./humidity.png" width="15" alt="" />{" "}
                               {response.main.humidity}%
                             </p>
                             <p className="right">{response.main.temp}°C</p>
